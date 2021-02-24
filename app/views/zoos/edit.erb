@@ -1,0 +1,10 @@
+
+<%=  form_for @zoo do |t|%>
+    <%= t.label  :name %> 
+    <%= t.text_field  :name %> <br/>
+    <%= t.label  :address %> 
+    <%= t.text_field :address %> <br/> 
+    <%= t.label  :species %> 
+    <%= t.text_field :species %> <br />
+    <%= t.submit "done" %> 
+<% end %>

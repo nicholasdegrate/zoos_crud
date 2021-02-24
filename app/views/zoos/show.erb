@@ -1,0 +1,9 @@
+
+<h1><%= @zoo.name %></h1>
+
+<li><%= @zoo.address %></li>
+<li><%= @zoo.species %></li>
+
+<%= link_to 'home', zoos_path %>
+<%= button_to "edit", edit_zoo_path(@zoo), :method => :get %>
+<%= button_to "delete", delete_zoo_path(@zoo), :method => :delete %>

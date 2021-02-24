@@ -1,0 +1,7 @@
+
+
+<% @zoos.each do |zoo| %>
+    <li><%= link_to zoo.name, zoo_path(zoo) %></li>
+<%end%>
+
+<%= link_to 'create', new_zoo_path %>
